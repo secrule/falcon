@@ -1,0 +1,44 @@
+<div class="menu" id="menu">
+    	<div class="mtop"></div>
+        <ul>
+        
+        	<?php if(trim($_GET['action']) ==''){?>
+            	<li class="on"><span>监控主页</span></li>
+            <?php }else{ ?>
+            	<li><a href="index.php"><span>监控主页</span></a></li>
+            <?php }?>
+            
+            <?php if(trim($_GET['action']) =='count'){?>
+            	<li class="on"><span>监控统计图</span></li>
+            <?php }else{ ?>
+            <li><a href="?action=count"><span>监控统计图</span></a></li>
+            <?php }?>
+            
+            <?php if(trim($_GET['action']) =='virus'){?>
+            	<li class="on"><span>查看后门文件</span></li>
+            <?php }else{ ?>
+             	<li><a href="?action=virus"><span>查看后门文件</span></a></li>
+            <?php }?>
+            
+            <?php if(trim($_GET['action']) =='keyword'){?>
+            	<li class="on"<span>查看可疑文件</span></li>
+            <?php }else{ ?>
+             	<li><a href="?action=keyword"><span>查看可疑文件</span></a></li>
+		<?php }?>
+
+	    <?php if(trim($_GET['action']) =='countdel'){?>
+                <li class="on"<span>查看被删除文件</span></li>
+		<?php }else{ ?>
+		<li><a href="?action=countdel"><span>查看被删除文件</span></a></li>
+		<?php }?>
+
+	    <?php if(trim($_GET['action']) =='countmodify'){?>
+	        <li class="on"<span>查看被修改文件</span></li>
+	        <?php }else{ ?>
+	        <li><a href="?action=countmodify"><span>查看被修改文件</span></a></li>
+		<?php }?>
+
+            <li><a href="?action=exit"><span>退&nbsp;&nbsp;出</a></span></li>
+        </ul>
+        <div class="mbtm"></div>
+</div>

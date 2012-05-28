@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;}
+html{height:100%;}
+body{font:12px/22px normal Arial, '黑体';background:#E1E1E1 url(image/bg.jpg) repeat center 0;}
+
+/*首页*/
+li{list-style:none;}
+a{color:#999;text-decoration:none;}
+a:focus{-moz-outline:none;outline:none;}
+.cl{clear:both;}
+.wrap{width:980px;margin:0 auto;}
+.header{height:170px;background:url(image/top_bg.jpg) repeat-x center 0;}
+.logo{width:980px;height:105px;padding-top:30px;margin:0 auto;}
+.logo a{width:345px;height:105px;display:block;}
+.logo h1{width:980px;height:105px;background:url(image/logo.png) no-repeat 0 0;text-indent:-9999px;}
+.menu{width:187px;float:left;}
+.menu .mtop, .menu .mbtm{height:14px;background:url(image/menu.png) no-repeat;}
+.menu .mtop{background-position:0 0}
+.menu .mbtm{background-position:0 -16px;*margin-top:-2px}
+.menu li{height:40px;background:url(image/menu_l.png) no-repeat;line-height:40px;text-indent:30px;;width:188px;display:block;font-size:14px;position:relative}
+.menu li a{height:40px;line-height:40px;text-indent:30px;;width:176px;display:block;font-size:14px;}
+.menu li a:hover{background:#000;}
+.menu li.on{color:#000;background:url(image/menu_on.png);font-weight:bold;}
+.main{width:793px;background:url(image/mbg.jpg) repeat-y;float:right;height:100%;}
+.main h3{padding:0 0 10px 20px;height:24px;line-height:24px;}
+.main_top, .main_bottom{height:8px;background:url(image/mtb.jpg)}
+.main_top{margin-bottom:10px;}
+.main_bottom{background-position:0 -8px;clear:both;clear:both;}
+.contimg{padding:10px 30px;}
+.content{padding:10px 30px;font-size:14px;font-weight:bold;height:183px;}
+.content span{color:#F00;}
+.mtable{width:763px;margin:0 auto;background:#e6e6e6 url(image/thead.png) no-repeat 0 0;}
+.mtable td{font-size:12px;text-align:center;border:1px solid #c5c5c5;border-width:0 1px 1px 0;}
+.mtable thead tr{height:37px;width:763px;}
+.mtable thead td{font-weight:bold;font-size:14px;color:#FFF;border:0;background:none;}
+.mtable td.ftd{border-width:0 1px 1px 1px;}
+.mtable tr{height:40px;}
+.viewbtn{width:86px;height:25px;line-height:25px;color:#000;background:url(image/view.jpg);display:block;text-align:center;margin:0 auto;}
+.codebox{background:#FFF;margin:2px 2px;color:#5aa35d;padding:10px;text-align:left;word-wrap:break-word;word-break:normal;}
+/*分页*/
+.page{padding-bottom:10px;height:30px;}
+.page ul{float:right;padding-right:10px;display:block;height:30px;}
+.page .list{display:block;float:left;background:url(image/pagebtn.png) no-repeat;height:30px;color:#666;padding:0 0 0 10px;line-height:30px;margin-right:10px;}
+.page .list a{color:#000;}
+.page .list a:hover{color:#5AA35D}
+.rbg{background:url(image/pagebtn.png) no-repeat right 0;height:30px;display:block;padding:0 10px 0 0;}
+.rbg i{font-style:normal;color:#A00;}
+.rbg b{font-style:normal;color:#A00;}
+.pages_input{width:150px;height:30px;display:block;float:left;margin-right:5px;color:#666;}
+.pages_input input{text-align:center;line-height:30px;display:block;float:left;height:30px;width:40px;margin-right:5px;border-radius:4px;border:1px solid #CCC;}
+.pages_input span{display:block;float:left;width:100px;height:30px;line-height:30px;}
+
+/*安装*/
+.step1{width:980px;height:565px;background:url(image/step1.png);margin:0 auto;}
+.step1 b{color:#5c9211;font-family:'微软雅黑';font-size:39px;height:40px;padding:300px 0 165px;display:block;width:100%;text-align:center;}
+.step1 a{display:block;width:480px;height:60px;text-indent:-9999px;margin:0 auto;}
+
+.step2{width:980px;height:600px;background:url(image/step2.png);margin:0 auto;}
+.step2 b.try{padding:230px 0 25px;}
+.step2 b.succuss{width:400px;display:block;margin:0 auto;height:50px;line-height:50px;padding-bottom:160px;padding-left:50px;background:url(image/succuss.png) no-repeat 0 0;}
+.step2 b{color:#5c9211;font-family:'微软雅黑';font-size:39px;height:40px;display:block;width:100%;text-align:center;}
+.step2 a.btn1{background:url(image/btn1.png) no-repeat;display:block;width:480px;height:60px;text-indent:-9999px;float:left;margin-right:25px;}
+.step2 a.btn2{background:url(image/btn2.png) no-repeat;display:block;width:474px;height:60px;text-indent:-9999px;float:left;}
+.step2 a.btn3{background:url(image/btn3.png) no-repeat;display:block;width:480px;height:60px;text-indent:-9999px;margin:0 auto;}
+
+.step2 .error{padding-bottom:80px;height:120px;}
+.step2 .error b{font-size:36px;height:45px;line-height:45px;}
+
+.step3{width:980px;height:600px;background:url(image/step3.png);margin:0 auto;}
+.step3 .creat{padding-top:180px;color:#5c9211;font-family:'微软雅黑';font-size:20px;width:500px;margin:0 auto;line-height:34px;display:block;}
+.step3 .err{width:500px;line-height:24px;color:#F00;margin:0 auto;}
+.step3 .done{line-height:34px;color:#5c9211;font-family:'微软雅黑';font-size:20px;width:500px;margin:0 auto;}
+.step3 .done form{font-size:16px;line-height:50px;color:#000;padding-top:30px;}
+.step3 .done .inputbox{width:260px;padding:0 5px;height:35px;background:url(image/input.png) no-repeat;border:0;}
+.step3 .btn4{background:url(image/btn4.png) no-repeat;border:0;display:block;width:480px;height:60px;text-indent:-9999px;margin:0 auto;margin-top:50px;}
+.step4{width:980px;height:600px;background:url(image/step2.png);margin:0 auto;}
+.step4 b{color:#5c9211;font-family:'微软雅黑';font-size:39px;height:40px;display:block;width:100%;text-align:center;height:50px;padding:300px 0 150px;}
+.step4 a.btn4{background:url(image/btn5.png) no-repeat;display:block;width:480px;height:60px;text-indent:-9999px;margin:0 auto;}
+
+
+/*登录*/
+.loginbox{width:360px;height:180px;margin:0 auto;margin-top:100px;background:url(image/login.png);padding-top:120px;}
+.name input, .pass input{margin-left:75px;line-height:30px;border:0;background:none;font-size:16px;width:246px;height:35px;}
+.pass{margin-top:16px;}
+.login{margin-top:30px;padding-left:68px;}
+.login input{float:left;background:none;border:0;text-indent:-9999px;overflow:hidden;cursor:pointer;}
+.login #sub{width:157px;height:48px;margin-right:10px;}
+.login #ret{width:95px;height:48px;}
+.loginfo {text-align:center;color:red;}
+
+/*页尾*/
+.footer{padding-top:20px;clear:both;}
+.inner{border-top:1px solid #c2c2c2;}
+.info{border-top:1px solid #e9e9e9;text-align:center;padding-top:20px;color:#999;font-family:Courier;}

@@ -1,0 +1,33 @@
+	<h3>当天可疑文件修改数：<font color=#D9773A>{countmodify}</font></h3>
+	<table class="mtable" width="100%" border="0" cellspacing="0" cellpadding="0">
+        	<thead>
+            <tr>
+                <td width="102">ID</td>
+                <td width="140">服务器IP</td>
+                <td width="130">报警内容</td>
+                <td width="80">危险等级</td>
+                <td width="80">处理结果</td>
+                <td width="130">监控时间</td>
+                <td>文件详情</td>
+            </tr>
+            </thead>
+            {foreach:all,rowscountmodify}
+			<tr>
+				   <td class="ftd">{rowscountmodify['id']}</td>
+				   <td>{rowscountmodify['ip']}</td>
+				   <td>{rowscountmodify['content']}</td>
+				   <td>{rowscountmodify['level']}</td>
+				{if:rowscountodify['remove']=="已处理"}
+				<td><font color=#D9773A>{color}{rowscountmodify['remove']}</font></td>
+				{else}
+				<td>{rowscountmodify['remove']}</td>
+				{end:}
+			    <td>{rowscountmodify['date']}</td>
+			    <td><a href="javascript:;" class="viewbtn" onClick="showdiv('div_{rowscountmodify['id']}');">查看源代码</a></td>
+            </tr>	
+			<tr id="div_{rowscountmodify['id']}" style="display:none;">
+				<td class="ftd" colspan="7"><div class="codebox">{htmlspecialchars(rowscountmodify['source'])}</div></td>
+			</tr>
+			{end}
+            
+        </table>

@@ -1,0 +1,31 @@
+安装步骤
+*************************
+
+Copyright (C) 2012 Secrule co., Ltd.
+
+
+第一步，解压
+tar -zxvf falcon.tar.gz
+
+第二步，检查程序编译环境
+cd Release/
+./check.sh
+看到以下信息证明程序编译环境准备就绪 
+Found inotify success!
+Found mysql-dev environment success!
+
+第三步，安装Falcon控制中心
+vim ./falconconsole/public/config.inc.php
+修改配置文件中的数据库连接信息，如果控制中心与监控程序没有安装在同一台主机，请确保被监控主机能够有权访问到控制中心所在主机的Mysql数据库
+运行install.php安装控制中心
+
+第四步，修改监控程序配置文件并编译
+vim src/conf/global.conf
+make
+
+第五步，后台运行监控程序
+nohup ./falcon start >falcon.log 2>&1 &
+ps aux|grep "falcon"
+root      2981  0.2  0.3   9352  1848 pts/0    S    04:46   0:00 ./falcon start
+
+程序将在当前运行目录下生成日志文件falcon.log

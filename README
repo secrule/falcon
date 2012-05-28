@@ -1,0 +1,8 @@
+Falcon-Web服务器文件监控平台
+============================ 
+
+Falcon是一款基于inotify-tools 开发的Web服务器文件监控平台
+能够实时监控Web目录文件变化(新增，修改，删除)，判断文件内容是否包含恶意代码，自动隔离常见Webshell，保证Web目录文件安全
+
+BUG反馈或建议请联系:falcon@secrule.com
+公司主页:www.secrule.com

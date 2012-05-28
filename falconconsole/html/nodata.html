@@ -1,0 +1,31 @@
+	<h3><font color=#D9773A>当天没有数据</font></h3>
+	<table class="mtable" width="100%" border="0" cellspacing="0" cellpadding="0">
+        	<thead>
+            <tr>
+                <td width="102">ID</td>
+                <td width="140">服务器IP</td>
+                <td width="130">报警内容</td>
+                <td width="80">危险等级</td>
+                <td width="80">处理结果</td>
+                <td width="130">监控时间</td>
+                <td>文件详情</td>
+            </tr>
+            </thead>
+			<tr>
+				   <td class="ftd">{rowsvirus['id']}</td>
+				   <td>{rowsvirus['ip']}</td>
+				   <td>{rowsvirus['content']}</td>
+				   <td>{rowsvirus['level']}</td>
+				{if:rowsvirus['remove']=="已处理"}
+				<td><font color=#D9773A>{color}{rowsvirus['remove']}</font></td>
+				{else}
+				<td>{rowsvirus['remove']}</td>
+				{end:}
+			    <td>{rowsvirus['date']}</td>
+			    <td><a href="javascript:;" class="viewbtn" onClick="showdiv('div_{rowsvirus['id']}');">查看源代码</a></td>
+            </tr>	
+			<tr id="div_{rowsvirus['id']}" style="display:none;">
+				<td class="ftd" colspan="7"><div class="codebox">{htmlspecialchars(rowsvirus['source'])}</div></td>
+			</tr>
+            
+        </table>
