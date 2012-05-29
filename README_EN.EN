@@ -1,0 +1,7 @@
+Falcon - Web Server File Monitor
+= = = = = = = = = = = = = = = = = = 
+
+Falcon is a web server file monitor that base on inotify-tools. 
+Can monitor the changes of Web server file in the realtime (create, modify, and delete), check the malicious code, isolation Webshell automatic, ensure the safety of Web directory
+BUG feedback or Suggestions: falcon@secrule.com 
+Our website: www.secrule.com

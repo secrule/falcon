@@ -1,0 +1,36 @@
+Installation Steps
+*************************
+
+Copyright (C) 2012 Secrule co., Ltd.
+
+
+1£ºExtract
+
+tar -zxvf falcon.tar.gz
+
+
+2£ºCheck the program compiling environment
+cd Release/
+./check.sh
+
+When you see the following information,the program compiling environment is ready.
+Found inotify success!
+Found mysql-dev environment success!
+
+
+3£º Install Falcon control center
+vim ./falconconsole/public/config.inc.php
+Change the database connection information of the configuration files , if the console and monitor program were not installed in the same server, please ensure that console has right to connect to Mysql database
+
+4£º Change the configuration file of monitor,web directory must end of the "/"
+cd Release/
+vim src/conf/global.conf
+make
+
+5£ºMonitor program in the background
+nohup ./falcon start >falcon.log 2>&1 &
+ps aux|grep "falcon"
+root      2981  0.2  0.3   9352  1848 pts/0    S    04:46   0:00 ./falcon start
+
+The program will generate the log file falcon. Log in the current directory
+Then you can visit console page like http://127.0.0.1/falconconsole/index.php
