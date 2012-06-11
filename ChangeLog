@@ -1,6 +1,6 @@
 Revision 0.1.1
          - 修正了监控图表显示无法找到字体文件的BUG，重新上传了字体文件(public/SIMHEI.TTF)
- 	 - 修复监控图表载入问题，重新上传了phpot.php
+ 	 - 修复监控图表载入问题，重新上传了phplot.php
 	 - 修改了安装控制台程序时的一个小BUG，重新上传了install.php
  @todo, ???
  
