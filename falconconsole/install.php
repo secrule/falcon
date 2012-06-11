@@ -143,7 +143,7 @@ $query[] = "CREATE TABLE $table2 (
 $explain[] = "创建 $table2 数据表";
 
     $time= date('Y-m-d H:m:s');
-	$query[] = "INSERT INTO $table2 VALUES (1,'127.0.0.1', '这是一条测试数据', 'this is sourcecode', '1','','$time')"; 
+	$query[] = "INSERT INTO $table2 VALUES (1,'127.0.0.1', '这是一条测试数据', 'this is sourcecode', '1','0','$time')"; 
 	doqueries();
 	echo "</div>";
 	if ($DB_site -> errno != 0) {
