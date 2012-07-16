@@ -317,7 +317,7 @@ int virusHandler(struct inotify_event *event,
 	if (access(fullPathTemp, F_OK) == 0) {
 		if (event->mask & IN_CREATE) {
 			if (event->mask & IN_ISDIR) {
-
+				inotifytools_watch_recursively(fullPathTemp, IN_ALL_EVENTS);
 			} else {
 				tmpkeywords = findViruses(phpVirusfeature, php_virus_num,
 						fullPathTemp);
